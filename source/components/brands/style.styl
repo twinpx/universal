@@ -1,0 +1,58 @@
+@import '../../styl/component-include.styl'
+
+.bj-brands
+  position relative
+
+  &__all
+    font-size 9pt
+    position absolute
+    top 8px
+    right 85px
+  
+  h2
+    margin-bottom -26px
+  
+  .fotorama__nav--dots
+    display none
+    
+  .fotorama__html
+    padding-top 44px
+    
+  .fotorama__arr--next,
+  .fotorama__arr--prev
+    top 0
+    margin-top 0
+    width 18px
+    height 38px
+    background none
+    
+  .fotorama__arr.fotorama__arr--prev
+    left auto
+    right 40px
+    
+    &:after
+      content ''
+      display block
+      width 18px
+      height 38px
+      background embedurl( 'img/arrow.svg' ) no-repeat center center
+    
+  .fotorama__arr.fotorama__arr--next
+    right 2px
+    
+    &:after
+      content ''
+      display block
+      width 18px
+      height 38px
+      background embedurl( 'img/arrow.svg' ) no-repeat center center
+      transform rotate( 180deg )
+    
+  .fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows
+    .fotorama__arr--prev:not(:focus),    
+    .fotorama__arr--next:not(:focus)
+      transform translate3d(0,0,0)
+      
+  .fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr,
+  .fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__fullscreen-icon
+    opacity 1

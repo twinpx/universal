@@ -1,0 +1,88 @@
+@import '../../styl/component-include.styl'
+
+@keyframes impression-preloader
+  0%
+    transform rotate(0deg)
+  50%
+    transform rotate(180deg)
+  100%
+    transform rotate(360deg)
+    
+.bj-banner
+  background-color #f4f4f4
+  position relative
+    
+  &:before
+    content ''
+    display block
+    background url(/template/images/preloader.svg) no-repeat center
+    width 50px
+    height 50px
+    position absolute
+    top 50%
+    left 50%
+    margin -25px 0 0 -25px
+    animation impression-preloader 1s linear infinite
+  
+  .fotorama__html
+    
+    a
+      display block
+      height 400px
+      background-repeat no-repeat
+      background-position center
+      background-size cover
+      
+  .fotorama__dot
+    width 10px
+    height 10px
+    border 1px solid #666666
+    
+  .fotorama__nav__frame.fotorama__active .fotorama__dot
+    border-width 5px
+        
+  .fotorama__nav-wrap
+    position absolute
+    bottom 10px
+    left 0
+    width 100%
+    
+  .fotorama__arr
+    margin-top -64px
+    display block
+    width 32px
+    height 128px
+    background rgba(0,0,0,.5)
+    transition( opacity .2s ease )
+    
+  .fotorama__arr.fotorama__arr--prev
+    left 0
+    
+    &:after
+      content ''
+      display block
+      width 32px
+      height 32px
+      background embedurl( 'img/arrow.svg' ) no-repeat center center
+      position absolute
+      top 50%
+      left 50%
+      margin -16px 0 0 -16px
+    
+  .fotorama__arr.fotorama__arr--next
+    right 0
+    
+    &:after
+      content ''
+      display block
+      width 32px
+      height 32px
+      background embedurl( 'img/arrow.svg' ) no-repeat center center
+      position absolute
+      top 50%
+      left 50%
+      margin -16px 0 0 -16px
+      transform rotate( 180deg )
+      
+      
+    

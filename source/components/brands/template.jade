@@ -1,0 +1,36 @@
+﻿// start /components/brands/
+
+link( rel="stylesheet", href="/components/brands/style.css" )
+script( src="/components/brands/script.js" )
+
+.bj-brands( data-url="/components/brands/response.json" )
+
+  h2 Бренды
+  a.bj-brands__all( href="" ) Все бренды
+
+  .fotorama( data-width="100%" data-height="144" data-loop="true" )
+    div
+      .row
+        - var m=0
+          while m<6
+            - m++
+            .col-sm-2
+              img.img-responsive( src="http://s.fotorama.io/1.jpg" )
+    div
+      .row
+        - var m=0
+          while m<6
+            - m++
+            .col-sm-2
+              img.img-responsive( src="http://s.fotorama.io/2.jpg" )
+    div
+      .row
+        - var m=0
+          while m<6
+            - m++
+            .col-sm-2
+              img.img-responsive( src="http://s.fotorama.io/okonechnikov/27-lo.jpg" )
+
+hr.i-size-L
+
+// end /components/brands/

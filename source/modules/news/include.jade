@@ -1,0 +1,72 @@
+﻿.bj-news
+
+  .row
+    .col-sm-6.col-xs-8
+      h2 Новости
+        a.h-link( href="/news/" ) Подписаться
+    
+    .col-sm-6.col-xs-4.text-right
+      .bj-more-link
+        a( href="/news/" ) Все новости
+        include ../../svg/arrow
+  
+  .row
+    
+    .col-sm-3
+      a.bj-news__image( href="/news/item/" )
+        img( src="http://s.fotorama.io/okonechnikov/28-lo.jpg" alt="" )
+      p 30 января 2017
+      a( href="/news/item/" ) Новогодняя распродажа!
+      
+    hr.i-size-L.visible-xs
+    
+    .col-sm-3
+      a.bj-news__image( href="/news/item/" )
+        img( src="http://s.fotorama.io/okonechnikov/27-lo.jpg" alt="" )
+      p 30 января 2017
+      a( href="/news/item/" ) Товар дня! Электрическая зубная щетка Philips HX8911/02
+      
+    hr.i-size-L.visible-xs
+    
+    .col-sm-3
+      a.bj-news__image( href="/news/item/" )
+        img( src="http://s.fotorama.io/okonechnikov/26-lo.jpg" alt="" )
+      p 30 января 2017
+      a( href="/news/item/" ) Товар дня! Электрическая зубная щетка Philips HX8911/02
+      
+    hr.i-size-L.visible-xs
+    
+    .col-sm-3
+      a.bj-news__image( href="/news/item/" )
+        img( src="http://s.fotorama.io/okonechnikov/25-lo.jpg" alt="" )
+      p 30 января 2017
+      a( href="/news/item/" ) Новогодняя распродажа!
+      
+hr.i-size-L
+      
+.bj-news
+
+  h2 Новости
+  
+  .bj-news__item
+  
+    .row
+    
+      .col-sm-4.bj-news__text
+        p 23 января 2015
+        .h3
+          a( href="/news/item/" ) Новогодняя распродажа!
+        p Сегодня компания Apple представила совершенно новый 15-дюймовый MacBook Pro с потрясающим дисплеем ..
+        a.btn.btn-default( href="" ) Подробнее
+      
+      .col-sm-4
+        a.bj-news__ill( href="/news/item/" )
+          img( src="http://s.fotorama.io/okonechnikov/27-lo.jpg" alt="" )
+      
+      .col-sm-4.bj-news__subscribe.text-center
+        .h3 Подписаться на новости
+        p.small Узнавайте свежую информацию о скидках и акциях первым.
+        form( action="" method="GET" )
+          .form-group
+            input.form-control( type="email" name="EMAIL" placeholder="Введите email" )
+            button.btn.btn-default( type="submit" ) Ok

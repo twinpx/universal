@@ -1,0 +1,42 @@
+@import '../../styl/component-include.styl'
+
+.b-advantages
+
+  &__item
+    padding-top 100%
+    position relative
+    
+    .i-mobile &
+      padding-top 40%
+      
+      @media( max-width 767px )
+        padding-top 60%
+      
+      p
+        margin-bottom 0
+    
+  &__content
+    position absolute
+    top 50px
+    left 0
+    width 100%
+    padding 0 20px
+    
+    .i-mobile &
+      height 100%
+      top 0
+      padding-left 81px
+      display flex
+      align-items center
+  
+  &__icon
+    width 42px
+    height 42px
+    margin 0 auto
+    
+    .i-mobile &
+      margin 0
+      position absolute
+      top 50%
+      left 19px
+      margin-top -21px

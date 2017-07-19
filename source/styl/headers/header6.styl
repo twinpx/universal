@@ -1,0 +1,80 @@
+.bj-page-header.i-header6
+
+  .bj-page-header__body
+    height 100px
+    
+  .bj-page-header__content
+    padding-top 22px
+    
+    @media( max-width 767px )
+      padding-top 33px
+    
+  .bj-page-header__search
+    position relative
+    margin-top -6px
+      
+    @media ( max-width 1199px )
+      display none
+  
+    .bj-top-search__icon
+      right 12px
+      left auto
+      top 7px
+      margin-top 0
+      
+    .form-control
+      height 31px
+      width 350px
+      background rgba( 0,0,0,0.08 )
+      padding-left 12px
+      padding-right 5px
+      
+  .bj-phone
+    margin-top -4px
+      
+  .bj-phone__num
+    font-size 13.5pt
+    margin-right 30px
+    
+  .bj-phone__icon
+    margin-top 3px
+  
+    @media( max-width 767px )
+      display none
+    
+  .bj-page-header__bottom-menu
+  
+    @media( max-width 767px )
+      display none
+
+    menu
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      height 50px
+      text-transform uppercase
+      align-items center
+      overflow hidden
+      margin 0 -10px
+      
+    li
+      margin 0 10px
+    
+      @media( max-width 1199px )
+        &
+          display none
+          
+        &:nth-of-type(1),
+        &:nth-of-type(2),
+        &:nth-of-type(3),
+        &:nth-of-type(4),
+        &:last-child
+          display list-item
+      
+    a,
+    a:hover,
+    a:active,
+    a:focus
+      color #fff
+      white-space nowrap
+    

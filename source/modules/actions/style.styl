@@ -1,0 +1,39 @@
+@import '../../styl/component-include.styl'
+
+.bj-actions
+
+  &__item
+    background-repeat no-repeat
+    background-position 33% top
+    background-size cover
+    
+    @media( max-width 767px )
+      margin 0 15px
+  
+  &__text
+    color #fff
+    padding 35px 65px 35px
+    margin-left 15px
+    
+    @media( max-width 767px )
+      margin-left 0
+    
+    a
+      &,
+      &:hover,
+      &:active,
+      &:focus
+        color #fff
+    
+    .btn
+      &,
+      &:hover,
+      &:active,
+      &:focus
+        background-color #fff
+    
+    &.col-sm-offset-8
+      margin-left calc( 66.6666666% - 15px )
+    
+      @media( max-width 767px )
+        margin-left 0

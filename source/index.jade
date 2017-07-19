@@ -1,0 +1,34 @@
+﻿extends ./layouts/main.jade
+
+block title
+  title Main page | Universal
+
+block content
+  
+  include ./components/banner/template
+  
+  hr
+  
+  .container
+    
+    include ./modules/advantages/include
+    
+    hr.i-size-L
+    
+    include ./modules/advantages/mobile
+    
+    hr.i-size-L
+    
+    include ./modules/masonry/include
+    
+    hr.i-size-L
+    
+    include ./modules/news/include
+    
+    hr.i-size-L
+    
+    include ./modules/actions/include
+    
+    hr.i-size-XL
+    
+    include ./components/brands/template

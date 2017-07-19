@@ -1,0 +1,128 @@
+﻿body
+    font-weight 400
+    font-size 10.5pt
+    line-height 1.47
+    color #000
+
+thead
+    border-bottom none
+
+td,th
+    border-radius 0
+
+button
+    &:focus
+        outline 0!important
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5
+  display block
+  word-wrap break-word
+
+  &:first-child
+    margin-top 0
+
+h1,.h1
+    font-family "Roboto Slab",Arial
+    font-weight 400
+    font-size 36pt
+    margin-top 0
+
+h1.i-small,.h1.i-small
+    font-size 24pt
+
+@media (max-width:767px)
+  h1,.h1
+    font-size 18pt
+
+h2,.h2
+  font-size 18pt
+  font-weight 700
+
+h3,.h3
+    font-size 13.5pt
+    font-weight 400
+
+h4,.h4,h5,.h5
+    color #999
+    font-weight 700
+
+h5,.h5
+    font-size 9pt
+
+h1,.h1,h2,.h2
+    margin-bottom 18pt
+
+h3,.h3,h4,.h4,h5,.h5
+    margin-bottom 10px
+
+a
+  
+  &:hover
+    opacity 0.7
+  
+  &:focus
+      outline 0
+      text-decoration none
+        
+.h-link
+  font-size 9pt
+  margin-left 32px
+  font-weight normal
+
+hr
+    border 0
+    height 1px
+    margin-bottom 10px
+    margin-top 10px
+    &.clearfix
+        clear both
+    &.i-size-M
+        margin-bottom 15px
+        margin-top 15px
+    &.i-size-L
+        margin-bottom 25px
+        margin-top 25px
+    &.i-size-XL
+        margin-bottom 40px
+        margin-top 40px
+    &.i-line
+        border-top 1px solid #eee
+        height 0
+
+@media (max-width:767px)
+    hr
+        margin-bottom 5px
+        margin-top 5px
+
+@media (max-width:767px)
+    hr
+        &.i-size-L
+            margin-bottom 10px
+            margin-top 10px
+            
+        &.i-size-XL
+            margin-bottom 20px
+            margin-top 20px
+
+menu
+    list-style-type none
+    padding 0
+    margin 0
+
+.btn-100
+    width 100%
+
+.text-large
+    font-size 13pt
+
+.i-relative
+    position relative

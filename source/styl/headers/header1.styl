@@ -1,0 +1,187 @@
+.bj-page-header
+
+  &__body
+    height 120px
+    padding-top 18px
+    
+    @media( max-width 767px )
+      height 100px
+      padding-top 6px
+    
+    a,
+    a:hover,
+    a:active,
+    a:focus
+      text-decoration none
+
+  &__top-menu
+    text-align right
+    text-transform uppercase
+    font-size 7.5pt
+    
+    a
+      display inline-block
+      vertical-align top
+      margin-left 25px
+      
+  &__content
+    padding-top 33px
+    display flex
+    justify-content space-between
+  
+    @media( max-width 767px )
+      justify-content space-around
+    
+  &__logo
+  
+    @media( max-width 767px )
+      order 2
+      text-align center
+      
+      img
+        width 60%
+        height auto
+    
+    a
+      display inline-block
+      vertical-align top
+      
+  &__menu
+  
+    @media( max-width 767px )
+      order 1
+    
+    menu
+      display inline-block
+      vertical-align top
+      margin-top 4px
+      
+    li
+      display inline-block
+      vertical-align top
+      margin 0 12px
+      font-size 9pt
+      text-transform uppercase
+      
+      @media ( max-width 1199px )
+        margin 0 6px
+      
+  &__menu-icon
+    display inline-block
+    width 16px
+    height 16px
+    margin 3px 0 0 8px
+    cursor pointer
+    
+    @media( max-width 767px )
+      margin-left 0
+    
+  &__icons
+  
+    @media( max-width 767px )
+      order 3
+  
+    > span
+      margin-left 32px
+      
+      &:nth-of-type(1)
+        margin-left 0
+      
+      @media ( max-width 1199px )
+        margin-left 22px
+        
+      @media( max-width 767px )
+        margin-left 0
+    
+  .bj-phone
+    margin-top 1px
+  
+    &__num
+      margin-right 10px
+      font-size 9pt
+  
+  path
+    fill #000
+        
+.bj-phone__icon,
+.bj-search__icon,
+.bj-top-search__icon,
+.bj-top-settings,
+.bj-top-fav,
+.bj-top-cart__icon,
+.bj-top-personal
+  width 16px
+  height 16px
+  display inline-block
+  vertical-align top
+  position relative
+  
+.bj-search__icon
+  cursor pointer
+  
+.bj-icon-num
+  display inline-block
+  width 20px
+  height 20px
+  border-radius 51%
+  color #fff
+  position absolute
+  top -14px
+  left 11px
+  margin 0 !important
+  font-size 7.5pt
+  line-height 20px
+  text-align center
+  
+.bj-top-cart__summ
+  position absolute
+  bottom -24px
+  left 50%
+  width 100px
+  margin-left -50px !important
+  text-align center
+  font-size 7.5pt
+  color #000
+  
+.bj-top-search
+  height 50px
+  background-color #f0f0f0
+  display none
+  
+  form
+    position relative
+    
+  &__icon
+    position absolute
+    top 50%
+    left 0
+    margin-top -8px
+    
+  &__input
+    padding 0 120px 0 35px
+    border 0
+    background-color #f0f0f0
+    box-shadow none
+    width 100%
+    height 50px
+    box-sizing border-box !important
+    
+    &:focus
+      outline none
+      box-shadow none
+      border none
+      
+  button
+    position absolute
+    top 8px
+    right 0
+    min-width 110px
+
+.bj-phone
+  text-align right
+  white-space nowrap
+
+.bj-phone__num
+    display inline-block
+    vertical-align top
+    white-space nowrap

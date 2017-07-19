@@ -1,0 +1,27 @@
+// start /components/banner/
+
+link( rel="stylesheet", href="/components/banner/style.css" )
+script( src="/components/banner/script.js" )
+
+link( href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" )
+script( src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js" )
+
+.bj-banner.hidden-xs( data-url="/components/banner/response.json" )
+  .fotorama( data-width="100%" data-height="400" data-autoplay="20000" data-loop="true" )
+    div
+      a( href="" style="background-image: url( http://s.fotorama.io/1.jpg );" )
+    div
+      a( href="" style="background-image: url( http://s.fotorama.io/2.jpg );" )
+    div
+      a( href="" style="background-image: url( http://s.fotorama.io/okonechnikov/30-lo.jpg );" )
+    div
+      a( href="" style="background-image: url( http://s.fotorama.io/okonechnikov/29-lo.jpg );" )
+    div
+      a( href="" style="background-image: url( http://s.fotorama.io/okonechnikov/28-lo.jpg );" )
+  
+  hr
+  
+
+  include ./mobile
+
+// end /components/banner/

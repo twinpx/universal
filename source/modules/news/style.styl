@@ -1,0 +1,59 @@
+@import '../../styl/component-include.styl'
+
+.bj-more-link
+  font-size 9pt
+  
+  a
+    vertical-align middle
+    margin-right 3px
+    
+  svg
+    width 13px
+    height 27px
+    transform rotate( 180deg )
+    vertical-align middle
+    
+    
+.bj-news
+
+  &__image
+    display block
+    margin-bottom 35px
+  
+    img
+      width 100%
+      height auto
+      
+  &__item
+    background #f7f7f7
+    
+  &__ill
+    display block
+    
+    img
+      width 100%
+      height auto
+      
+  &__text
+    padding 35px 65px 35px
+    
+  &__subscribe
+    padding 55px 65px 55px 35px
+    
+    @media( max-width 767px )
+      padding-left 65px
+    
+    .form-group
+      position relative
+    
+    input.form-control
+      border 0
+      background rgba( 0,0,0,0.05 )
+      padding-right 70px
+      height 35px
+      box-shadow none
+      
+    button
+      position absolute
+      top 0
+      right 0

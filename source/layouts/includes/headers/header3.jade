@@ -1,0 +1,78 @@
+﻿header.bj-page-header.i-header3
+    
+  .container.bj-page-header__body
+      
+    .bj-page-header__content
+    
+      .bj-page-header__logo
+        a( href="" )
+          img(width='177', alt='Universal', src='/upload/universal-logo.png', height='23', title='')
+        
+      .bj-page-header__menu
+      
+        menu.hidden-sm.hidden-xs
+          li
+            a( href="" ) Каталог
+          li
+            a( href="" ) Акции
+          li
+            a( href="" ) Производители
+          li
+            a( href="" ) Новости
+          
+        .bj-page-header__menu-icon
+          include ../svg/menu
+      
+      .bj-phone.hidden-xs
+        span.bj-phone__num 8 800 800 00 00
+        
+        a.bj-phone__icon( href="#" data-toggle='modal' data-target='#phoneModal' )
+          include ../svg/phone-call
+      
+        #phoneModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true', style='display: none;')
+          .modal-dialog(role='document')
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+                h2#myModalLabel.modal-title.text-center Наш телефон
+              .modal-body.text-center
+                .bj-text-x-large 8 (495) 212 85 06
+                .small Пн-Вс 10-19
+              .modal-footer.text-center(style='display:none')
+                button.btn.btn-default(type='button') Заказать звонок
+      
+      .bj-page-header__icons
+            
+        span.bj-page-header__search.hidden-xs
+        
+          span.bj-search__icon.hidden-xs( data-toggle='tooltip' data-placement='bottom' title='Поиск' )
+            include ../svg/magnifying-glass
+          
+        span.bj-top-settings.hidden-xs
+          include ../svg/settings
+          span.bj-icon-num 333
+          
+        span.bj-top-fav.hidden-xs
+          include ../svg/star
+          span.bj-icon-num 333
+            
+        span.bj-top-cart
+          a.bj-top-cart__icon(href='/personal/cart/')
+            include ../svg/shopping-cart
+            span.bj-icon-num 333
+            span.bj-top-cart__summ 344 500 руб.
+          
+        span.bj-top-personal.hidden-xs
+          include ../svg/avatar
+
+  .bj-top-search.hidden-xs
+    .container
+    
+      form(action='/catalog/')
+        .bj-top-search__icon
+          include ../svg/magnifying-glass
+        .form-group
+          input.bj-top-search__input.form-control( type='search', name='q', value='' placeholder="Поиск по товарам" )
+          input(name='s', type='hidden', value='')
+        button.btn.btn-default( type="submit" ) Найти
